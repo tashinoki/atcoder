@@ -4,24 +4,20 @@ R, S, P = map(int, input().strip().split(" "))
 T = list(input())
 action = [-1] * N
 point = {
-    "r": R,
-    "s": S,
-    "p": P
+    "r": P,
+    "s": R,
+    "p": S
 }
 
-i = 0
-start = 0
-while(True):
+score = 0
 
-    if not -1 in action:
-        break
+for i in range(N):
 
-    try:
-        index = start + i * K
-        enemy_cmd = T[index]
-        action(index).append
+    tmp = i - K
+    if 0 <= tmp and T[i] == T[tmp]:
+        score += 0
+        T[i]=""
 
-    except:
-        start += 1
-        i = 0
-        continue
+    else:
+        score+= point[T[i]]
+print(score)

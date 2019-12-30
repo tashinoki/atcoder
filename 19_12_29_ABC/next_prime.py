@@ -1,6 +1,7 @@
 import math
 N = int(input().strip())
 
+# 素数判定プログラム
 def is_prime(n):
     if n == 1: return False
 
