@@ -2,7 +2,7 @@
 N, K = map(int, input().strip().split(" "))
 R, S, P = map(int, input().strip().split(" "))
 T = list(input())
-action = [-1] * N
+
 point = {
     "r": P,
     "s": R,
